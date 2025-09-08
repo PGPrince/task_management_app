@@ -9,6 +9,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Color(0xffFFFFFF),
+        body: SafeArea(
+          child: Column(
+            children: [
+              Text(
+                'Hello Prashanta!',
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 46.17,
+                ),
+              ),
+            ],
+          ),
+        ), 
+      ),
+    );
   }
 }

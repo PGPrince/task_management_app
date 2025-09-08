@@ -15,14 +15,30 @@ class MyApp extends StatelessWidget {
         backgroundColor: Color(0xffFFFFFF),
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'Hello Prashanta!',
-                style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 46.17,
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Text(
+                  'Hello Prashanta!',
+                  style: TextStyle(
+                    fontSize: 40.17,
+                  ),
                 ),
               ),
+              SizedBox(
+                height: 5,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(
+                  'Have a nice day',
+                  style: TextStyle(
+                    // fontFamily: 
+                  ),
+                ),
+              ),
+              // SizedBox
             ],
           ),
         ), 

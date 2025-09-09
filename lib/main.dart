@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(0xffFFFFFF),
+        appBar: AppBar(
+          backgroundColor: Color(0xff0BA6DF)
+        ),
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,7 +33,7 @@ class MyApp extends StatelessWidget {
                 height: 5,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 10),
+                padding: const EdgeInsets.only(left: 20),
                 child: Text(
                   'Have a nice day',
                   style: TextStyle(
@@ -38,7 +41,73 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              // SizedBox
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Container(
+                      height: 50,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Color(0xffD0C6C6),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'My tasks',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Color(0xffD0C6C6),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'In-progress',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Color(0xffD0C6C6),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Complete',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
             ],
           ),
         ), 

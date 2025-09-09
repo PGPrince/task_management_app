@@ -17,18 +17,12 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color(0xffFFFFFF),
           leading: Padding(
             padding: const EdgeInsets.only(left: 20),
-            child: Icon(
-              Icons.menu_sharp,
-              size: 35,
-              ),
+            child: Icon(Icons.menu_sharp, size: 35),
           ),
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 20),
-              child: Icon(
-                Icons.account_circle,
-                size: 35,
-                ),
+              child: Icon(Icons.account_circle, size: 35),
             ),
           ],
         ),
@@ -40,27 +34,18 @@ class MyApp extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 20),
                 child: Text(
                   'Hello Prashanta!',
-                  style: TextStyle(
-                    fontSize: 40.17,
-                    fontFamily: 'poppins-bold'
-                  ),
+                  style: TextStyle(fontSize: 40.17, fontFamily: 'poppins-bold'),
                 ),
               ),
-              SizedBox(
-                height: 5,
-              ),
+              SizedBox(height: 5),
               Padding(
                 padding: const EdgeInsets.only(left: 20),
                 child: Text(
                   'Have a nice day',
-                  style: TextStyle(
-                    fontFamily: 'poppins-medium'
-                  ),
+                  style: TextStyle(fontFamily: 'poppins-medium'),
                 ),
               ),
-              SizedBox(
-                height: 10,
-              ),
+              SizedBox(height: 10),
               Row(
                 children: [
                   Padding(
@@ -75,16 +60,12 @@ class MyApp extends StatelessWidget {
                       child: Center(
                         child: Text(
                           'My tasks',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
+                  SizedBox(width: 10),
                   Container(
                     height: 50,
                     width: 100,
@@ -95,15 +76,11 @@ class MyApp extends StatelessWidget {
                     child: Center(
                       child: Text(
                         'In-progress',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
+                  SizedBox(width: 10),
                   Container(
                     height: 50,
                     width: 100,
@@ -114,17 +91,13 @@ class MyApp extends StatelessWidget {
                     child: Center(
                       child: Text(
                         'Complete',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
                 ],
               ),
-              SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: 20),
               Row(
                 children: [
                   Padding(
@@ -141,25 +114,23 @@ class MyApp extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                          Image(
-                            image: AssetImage('assets/images/project-management.png'),
+                              Image(
+                                image: AssetImage(
+                                  'assets/images/project-management.png',
+                                ),
+                              ),
+                              SizedBox(width: 10),
+                              Text(
+                                'Project 1',
+                                style: TextStyle(
+                                  fontSize: 22.42,
+                                  fontFamily: 'poppins-regular',
+                                  color: Color(0xffFFFFFF),
+                                ),
+                              ),
+                            ],
                           ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            'Project 1',
-                            style: TextStyle(
-                              fontSize: 22.42,
-                              fontFamily: 'poppins-regular',
-                              color: Color(0xffFFFFFF),
-                            ),
-                          ),
-                        ],
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
+                          SizedBox(height: 20),
                           Text(
                             'Fond-End\nDevelopment',
                             style: TextStyle(
@@ -168,9 +139,7 @@ class MyApp extends StatelessWidget {
                               color: Color(0xffFFFFFF),
                             ),
                           ),
-                          SizedBox(
-                            height: 20,
-                          ),
+                          SizedBox(height: 20),
                           Text(
                             'October 20, 2025',
                             style: TextStyle(
@@ -197,25 +166,23 @@ class MyApp extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                          Image(
-                            image: AssetImage('assets/images/project-management.png'),
+                              Image(
+                                image: AssetImage(
+                                  'assets/images/project-management.png',
+                                ),
+                              ),
+                              SizedBox(width: 10),
+                              Text(
+                                'Project 2',
+                                style: TextStyle(
+                                  fontSize: 22.42,
+                                  fontFamily: 'poppins-regular',
+                                  color: Color(0xffFFFFFF),
+                                ),
+                              ),
+                            ],
                           ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            'Project 2',
-                            style: TextStyle(
-                              fontSize: 22.42,
-                              fontFamily: 'poppins-regular',
-                              color: Color(0xffFFFFFF),
-                            ),
-                          ),
-                        ],
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
+                          SizedBox(height: 20),
                           Text(
                             'Back-End\nDevelopment',
                             style: TextStyle(
@@ -224,9 +191,7 @@ class MyApp extends StatelessWidget {
                               color: Color(0xffFFFFFF),
                             ),
                           ),
-                          SizedBox(
-                            height: 20,
-                          ),
+                          SizedBox(height: 20),
                           Text(
                             'October 20, 2025',
                             style: TextStyle(
@@ -241,33 +206,139 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.only(left: 30),
                 child: Text(
                   'Progress',
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontFamily: 'poppins-bold',
+                  style: TextStyle(fontSize: 30, fontFamily: 'poppins-bold'),
+                ),
+              ),
+              SizedBox(height: 20),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30),
+                    child: Container(
+                      height: 100,
+                      width: 350,
+                      decoration: BoxDecoration(
+                        color: Color(0xffFFFFFF),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20),
+                            child: Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                color: Color(0xff9112BC),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Image(
+                                image: AssetImage(
+                                  'assets/images/to-do-list.png',
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 20),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Design Changes',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontFamily: 'poppins-bold',
+                                ),
+                              ),
+                              SizedBox(width: 20),
+                              Text(
+                                '2 Days ago',
+                                style: TextStyle(fontFamily: 'poppins-regular'),
+                              ),
+                            ],
+                          ),
+                          SizedBox(width: 40),
+                          Icon(
+                            Icons.more_vert,
+                            color: Color(0xffC9CDCF),
+                            size: 35,
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
-              SizedBox(
-                height: 20,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 30),
-                child: Container(
-                  height: 50,
-                  width: 300,
-                  color: Color(0xffB87C4C)
-                ),
+              SizedBox(height: 20),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30),
+                    child: Container(
+                      height: 100,
+                      width: 350,
+                      decoration: BoxDecoration(
+                        color: Color(0xffFFFFFF),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20),
+                            child: Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                color: Color(0xff9112BC),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Image(
+                                image: AssetImage(
+                                  'assets/images/to-do-list.png',
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 20),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Design Changes',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontFamily: 'poppins-bold',
+                                ),
+                              ),
+                              SizedBox(width: 20),
+                              Text(
+                                '2 Days ago',
+                                style: TextStyle(fontFamily: 'poppins-regular'),
+                              ),
+                            ],
+                          ),
+                          SizedBox(width: 40),
+                          Icon(
+                            Icons.more_vert,
+                            color: Color(0xffC9CDCF),
+                            size: 35,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-        ), 
+        ),
       ),
     );
   }

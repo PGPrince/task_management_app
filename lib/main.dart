@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'pages/calender_page.dart';
 import 'pages/notifications_page.dart';
+import 'pages/search_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +28,7 @@ class _MainPageState extends State<MainPage> {
     HomePage(),
     CalenderPage(),
     NotificationsPage(),
-    Center(child: Text("Search Page")),
+    SearchPage(),
   ];
 
   void _onItemTapped(int index) {
